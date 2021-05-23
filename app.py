@@ -79,7 +79,7 @@ date_list = [base + datetime.timedelta(days=x) for x in range(numdays)]
 date_str = [x.strftime("%d-%m-%Y") for x in date_list]
 
 temp_user_agent = UserAgent()
-browser_header = {'User-Agent': temp_user_agent.random}
+browser_header = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'}
 
 final_df = None
 for INP_DATE in date_str:
